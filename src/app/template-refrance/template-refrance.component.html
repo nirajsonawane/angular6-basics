@@ -1,0 +1,10 @@
+<p>
+  template-refrance works!
+
+  <input #myInput type="text">
+  <button (click)="logMessage(myInput.value)" title="ClickToLogMessage" >ClickToLogMessage</button>
+  {{logMessageText}}
+  
+  <button (click)="logMessage(myInput)" title="ClickToLogMessage" >ClickToLogMessageFull event</button>
+  {{logMessageText}}
+</p>

@@ -1,0 +1,27 @@
+<p>
+  binding works!
+  <input type="text"  value="Niraj" >
+  <input type="text"   id="{{name}}"  value="">
+  Name : {{name}}
+
+  
+  <input [(ngModel)]="otherValue">
+  
+  otherValue = {{otherValue}}
+
+  <br>
+  <br>
+  <br>
+  <br>
+</p>
+
+  <h1>Class binding example</h1>
+  <h3 class="text-error">Some otherValue</h3>
+  <h3 class="text-success">Some otherValue</h3>
+  <h3 [class]="className">Binding</h3>
+
+  <h3 [class.text-error]="hasError">class.text-error</h3>
+  <h3 [class.text-error]="hasError2">class.text-error</h3>
+
+
+

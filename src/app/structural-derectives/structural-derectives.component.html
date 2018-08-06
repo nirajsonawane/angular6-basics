@@ -1,0 +1,47 @@
+<p>
+  structural-derectives works!
+  <input type="text">   
+</p>
+<div>
+
+  <h2 *ngIf="true">This is inside the the h2 tag : true</h2>
+  <h2 *ngIf="display">This is inside the the h2 tag : true</h2>
+  <br><br>
+  else block 
+  <h2 *ngIf="false ; else elseBlock">This is inside the the h2 tag : true</h2>
+  <ng-template #elseBlock>
+    <H2>This is else block</H2>
+  </ng-template>
+    <br><br>
+    ng if then else block;
+
+    <div *ngIf="false; then thenBlock ;else myElseBlock">
+
+    </div>
+
+    <ng-template #thenBlock>
+      <h2>Then block</h2>
+    </ng-template>
+    <ng-template #myElseBlock>
+        <h2>My Else block</h2>
+      </ng-template>
+</div>
+<br><br><br>
+<H2>Switch case examaple</H2>
+<div [ngSwitch]="'winecc'">
+
+  <div *ngSwitchCase="'red'">Red</div>
+  <div *ngSwitchCase="'green'">Green</div>
+  <div *ngSwitchCase="'blue'">Blue</div>
+  <div *ngSwitchCase="'wine'">Wine</div>
+  <div *ngSwitchDefault>Default</div>
+  
+</div>
+ 
+<br><br>
+loop examaple
+
+<div *ngFor="let iteam of list; index as i">
+  {{iteam}} number {{i}}
+
+</div>
